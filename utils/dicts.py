@@ -1,5 +1,6 @@
 def get_val(collection, key, default='git'):
-    for i in collection.keys():
-        if key == i:
-            return key['key']
-        return default
+    # Проверям наличие ключа в словаре
+    if key in collection:
+        return collection[key]
+    # Если ключа нет, возвращаем default
+    return default

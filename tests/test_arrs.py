@@ -22,6 +22,6 @@ def test_slice():
 
 
 def test_get_val():
-    assert dicts.get_val({'1': '2'}, '1', 'git') == 'git'
+    assert dicts.get_val({'1': '2'}, '1', 'git') == '2'
     assert dicts.get_val({'1': '2'}, '3', 'git') == 'git'
     assert dicts.get_val({}, '1', 'git') == 'git'
